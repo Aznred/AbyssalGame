@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Abysses de Fer – Codex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="game">
+    <div id="header">
+        <div class="header-left">
+            <span id="header-name">Nom: ?</span>
+            <span id="header-floor">Surface</span>
+        </div>
+        <div class="header-center">
+            <span id="header-hunger">Faim: 100%</span>
+            <span id="header-fatigue">Fatigue: 0%</span>
+        </div>
+        <div class="header-right">
+            <span id="header-gold">Or: 0</span>
+            <span id="header-save-status" class="small"></span>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="log"></div>
+        <div id="sidebar">
+            <div id="stats">
+                <h3>Statut</h3>
+                <div id="stats-content"></div>
+            </div>
+            <div id="party">
+                <h3>Groupe</h3>
+                <div id="party-content" class="small"></div>
+            </div>
+            <div id="menu">
+                <h3>Menu</h3>
+                <div id="menu-buttons"></div>
+            </div>
+            <div id="actions" data-turn="idle">
+                <h3>Actions</h3>
+                <div id="turn-label" class="small">En attente…</div>
+                <div id="action-buttons" class="small">Aucune action contextuelle.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toasts -->
+<div id="toast-container"></div>
+
+<!-- Overlay dés -->
+<div id="dice-overlay">
+    <div id="dice-title">Jets de dés</div>
+    <div id="dice-lines"></div>
+</div>
+
+<!-- Tooltip -->
+<div id="tooltip"></div>
+
+<!-- Overlays dégâts / coup -->
+<div id="damage-overlay"></div>
+<div id="hit-overlay"></div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/engine.js"></script>
+</body>
+</html>
