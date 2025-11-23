@@ -1,4 +1,4 @@
-// UI, logs, dés, tooltips, toasts, rendu
+    // UI, logs, dés, tooltips, toasts, rendu
 
 window.UI = (() => {
     const logEl = document.getElementById("log");
@@ -431,7 +431,7 @@ window.UI = (() => {
         menuButtons.appendChild(createMenuButton("Codex", ()=>engine.showCodex(), blocked));
         menuButtons.appendChild(createMenuButton("Succès", ()=>engine.showAchievements(), blocked));
 
-        if (DATA.VILLAGE_FLOORS.includes(f)) {
+        if (ABYSS_DATA.VILLAGE_FLOORS.includes(f)) {
             menuButtons.appendChild(createMenuButton("Camp", ()=>engine.showCamp(), blocked));
         }
     }

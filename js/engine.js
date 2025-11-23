@@ -2262,6 +2262,8 @@
         const inv = game.player.inventory;
         if (index < 0 || index >= inv.length) {
             UI.log("Objet introuvable.", "system");
+            renderAll();
+
             return;
         }
 
@@ -2269,6 +2271,8 @@
         const it = ABYSS_DATA.ITEMS[id];
         if (!it) {
             UI.log("Objet inconnu.", "system");
+            renderAll();
+
             return;
         }
 
@@ -2280,6 +2284,8 @@
                     game.player.stats.hp + heal
                 );
                 UI.log(`Tu bois ${it.name} et récupères ${heal} HP.`, "loot");
+                renderAll();
+
             } else if (it.effect === "heal_medium") {
                 const heal = randInt(10, 16);
                 game.player.stats.hp = Math.min(
@@ -2287,6 +2293,8 @@
                     game.player.stats.hp + heal
                 );
                 UI.log(`Tu bois ${it.name} et récupères ${heal} HP.`, "loot");
+                renderAll();
+
             } else if (it.effect === "heal_large") {
                 const heal = randInt(18, 26);
                 game.player.stats.hp = Math.min(
@@ -2294,11 +2302,17 @@
                     game.player.stats.hp + heal
                 );
                 UI.log(`Tu bois ${it.name} et récupères ${heal} HP.`, "loot");
+                renderAll();
+
             } else if (it.effect === "stamina_boost") {
                 game.player.fatigue = Math.max(0, game.player.fatigue - 25);
                 UI.log(`Tu avales ${it.name}. Ta fatigue diminue nettement.`, "loot");
+                renderAll();
+
             } else if (it.effect === "mana_small") {
                 UI.log(`Tu bois ${it.name}. Une énergie étrange circule en toi.`, "loot");
+                renderAll();
+
             }
         } else if (it.type === "food") {
             game.player.hunger = Math.min(100, game.player.hunger + (it.hunger || 0));
@@ -2310,8 +2324,11 @@
                 `Tu manges ${it.name}. Faim +${it.hunger || 0}%, fatigue ${it.fatigue || 0}%.`,
                 "loot"
             );
+            renderAll();
+
         } else {
             UI.log("Cet objet ne peut pas être utilisé ainsi.", "system");
+            renderAll();
             return;
         }
 
@@ -2345,16 +2362,21 @@
             index = key;
         } else {
             index = inv.indexOf(key);
+
         }
         if (index === -1) {
             UI.log("Objet introuvable.", "system");
+
             return;
         }
+        renderAll();
         _useItemAtIndex(index, inCombat);
+        renderAll();
     }
 
     function useItemIndex(index, inCombat) {
         _useItemAtIndex(index, inCombat);
+
     }
 
     function showInventory() {
