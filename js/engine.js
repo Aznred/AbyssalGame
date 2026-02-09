@@ -205,7 +205,7 @@
         gear_fragment: 0.5
     };
 
-    // Sacs spéciaux (à définir dans tes ITEMS plus tard)
+    // Sacs spéciaux
     const BAG_CAPACITY_BONUS = {
         small_gear_bag: 10,
         reinforced_pack: 20,
@@ -1088,7 +1088,6 @@
 
     /* ---------- Guildes ---------- */
 
-    // Nouveau système de guildes avec niveaux
     const GUILDS = [
         {
             id: "ironclads",
@@ -2556,7 +2555,7 @@
             p.expToNext = Math.floor(p.expToNext * 1.5);
             UI.log(`Tu passes niveau ${p.level} !`, "loot");
             UI.showToast("Niveau " + p.level + " !", "level");
-            // petite baisse de corruption à chaque up
+           
 
         }
         checkAchievements();
@@ -3064,14 +3063,7 @@
             return;
         }
 
-        // Option : si tu veux pénaliser le changement de guilde, tu peux réduire un peu la rep de l'ancienne ici.
-        // ex:
-        // if (game.guildId) {
-        //     const old = getGuildById(game.guildId);
-        //     if (old) {
-        //         game.reputation[old.repKey] = Math.max(0, (game.reputation[old.repKey] || 0) - 10);
-        //     }
-        // }
+        
 
         game.guildId = g.id;
         game.guildName = g.name;
@@ -3124,7 +3116,7 @@
             const tier = getGuildTierForRep(g, rep);
             const lvl = tier ? tier.level : 0;
 
-            // prochain palier
+           
             let nextTier = null;
             for (const t of g.tiers) {
                 if (t.repRequired > (tier ? tier.repRequired : -1)) {
@@ -3174,7 +3166,7 @@
         return tier ? tier.level : 0;
     }
 
-// Utilisé par tout le reste du jeu
+
     function getGuildBonus() {
         if (!game || !game.guildId) return { str: 0, dex: 0, luck: 0 };
         const g = getGuildById(game.guildId);
@@ -3694,9 +3686,9 @@
             "large_potion",
             "medium_potion",
             "stamina_elixir",
-            "abyssal_ring",       // si existant
-            "aether_amulet",      // si existant
-            "clockwork_amulet"    // si existant
+            "abyssal_ring",      
+            "aether_amulet",    
+            "clockwork_amulet"  
         ];
 
         pool.forEach((id) => {
@@ -3937,7 +3929,7 @@
         showInventory,
         showEquipment,
         equipOn,
-        useItemIndex,   // nouveau
+        useItemIndex,  
 
         // craft / cuisine / enchant
         showCraft,
