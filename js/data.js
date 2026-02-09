@@ -56,7 +56,7 @@ window.ABYSS_DATA = (() => {
         "pressure_mallet":{id:"pressure_mallet",name:"Maillet à pression",type:"weapon",weaponType:"hammer",stats:{str:5},price:145},
         "titanium_bayonet":{id:"titanium_bayonet",name:"Baïonnette en titane",type:"weapon",weaponType:"dagger",stats:{dex:4},price:120},
 
-        // Armes rares (20)
+        // Armes rares 
         "tesla_sabre":{id:"tesla_sabre",name:"Sabre Tesla",type:"weapon",weaponType:"sword",stats:{str:5,int:2},price:200},
         "arc_repeater":{id:"arc_repeater",name:"Arc répétition fulgurant",type:"weapon",weaponType:"bow",stats:{dex:6},price:230},
         "voltage_dagger":{id:"voltage_dagger",name:"Dague à haute tension",type:"weapon",weaponType:"dagger",stats:{dex:5,luck:3},price:210},
@@ -78,7 +78,7 @@ window.ABYSS_DATA = (() => {
         "arc_warhammer":{id:"arc_warhammer",name:"Marteau électrique",type:"weapon",weaponType:"hammer",stats:{str:7},price:280},
         "tesla_bow":{id:"tesla_bow",name:"Arc Tesla",type:"weapon",weaponType:"bow",stats:{dex:6,int:1},price:260},
 
-        // Armes légendaires (20)
+        // Armes légendaires
         "overcharge_sword":{id:"overcharge_sword",name:"Épée Surchargée",type:"weapon",weaponType:"sword",stats:{str:8,int:3},price:400},
         "atomic_spear":{id:"atomic_spear",name:"Lance Atomique",type:"weapon",weaponType:"spear",stats:{str:8,dex:3},price:420},
         "arcane_gearbow":{id:"arcane_gearbow",name:"Arc à engrenages arcanique",type:"weapon",weaponType:"bow",stats:{dex:8,int:2},price:410},
@@ -100,7 +100,7 @@ window.ABYSS_DATA = (() => {
         "shock_gauntlet":{id:"shock_gauntlet",name:"Gantelet de Choc",type:"weapon",weaponType:"dagger",stats:{dex:7,str:3},price:410},
         "arc_forge_bow":{id:"arc_forge_bow",name:"Arc de la Forge d'Arcs",type:"weapon",weaponType:"bow",stats:{dex:9},price:440},
 
-        // Armes mythiques (20)
+        // Armes mythiques 
         "heart_of_the_engine":{id:"heart_of_the_engine",name:"Cœur de l'Engin-Monde",type:"weapon",weaponType:"sword",stats:{str:12,int:6},price:900},
         "godcoil_spear":{id:"godcoil_spear",name:"Lance de Dieu-Inducteur",type:"weapon",weaponType:"spear",stats:{str:13},price:950},
         "eternal_steambow":{id:"eternal_steambow",name:"Arc Vapeur Éternelle",type:"weapon",weaponType:"bow",stats:{dex:12,int:4},price:920},
@@ -601,7 +601,7 @@ window.ABYSS_DATA = (() => {
     };
 
     const RESOURCES = {
-        // Plantes & champignons (25)
+        // Plantes & champignons
         herb: { id:"herb", name:"Herbe luminescente" },
         mushroom: { id:"mushroom", name:"Champignon phosphorescent" },
         glow_cap: { id:"glow_cap", name:"Chapeau lumineux" },
@@ -628,7 +628,7 @@ window.ABYSS_DATA = (() => {
         void_blossom: { id:"void_blossom", name:"Fleur du Néant" },
         toxic_spore: { id:"toxic_spore", name:"Spore toxique" },
 
-        // Parties de bêtes & organique (25)
+        // Parties de bêtes & organique
         beast_blood: { id:"beast_blood", name:"Sang de bête" },
         raw_meat: { id:"raw_meat", name:"Viande crue" },
         bone_shard: { id:"bone_shard", name:"Éclat d’os" },
@@ -655,7 +655,7 @@ window.ABYSS_DATA = (() => {
         smoked_meat: { id:"smoked_meat", name:"Viande fumée" },
         beast_fur: { id:"beast_fur", name:"Fourrure de bête" },
 
-        // Minerais & minéraux (25)
+        // Minerais & minéraux
         iron_ore: { id:"iron_ore", name:"Minerai de fer" },
         copper_ore: { id:"copper_ore", name:"Minerai de cuivre" },
         coal_chunk: { id:"coal_chunk", name:"Morceau de charbon" },
@@ -682,7 +682,7 @@ window.ABYSS_DATA = (() => {
         volcanic_rock: { id:"volcanic_rock", name:"Roche volcanique" },
         fossil_fragment: { id:"fossil_fragment", name:"Fragment de fossile" },
 
-        // Composants mécaniques & steampunk (25)
+        // Composants mécaniques & steampunk
         gear_fragment: { id:"gear_fragment", name:"Fragment d'engrenage" },
         copper_wire: { id:"copper_wire", name:"Fil de cuivre" },
         broken_spring: { id:"broken_spring", name:"Ressort brisé" },
@@ -709,7 +709,7 @@ window.ABYSS_DATA = (() => {
         smoke_stack: { id:"smoke_stack", name:"Cheminée industrielle" },
         rivets_pack: { id:"rivets_pack", name:"Paquet de rivets" },
 
-        // Ressources occultes & arcaniques (25)
+        // Ressources occultes & arcaniques
         cursed_bone: { id:"cursed_bone", name:"Os maudit" },
         shadow_essence: { id:"shadow_essence", name:"Essence d’ombre" },
         soul_fragment: { id:"soul_fragment", name:"Fragment d’âme" },
@@ -736,7 +736,7 @@ window.ABYSS_DATA = (() => {
         moonstone: { id:"moonstone", name:"Pierre de lune" },
         sunstone: { id:"sunstone", name:"Pierre de soleil" },
 
-        // Nourriture & cuisine (25)
+        // Nourriture & cuisine
         root_veg: { id:"root_veg", name:"Légume-racine" },
         grain_sack: { id:"grain_sack", name:"Sac de grains" },
         dried_fruit: { id:"dried_fruit", name:"Fruits séchés" },
@@ -763,7 +763,7 @@ window.ABYSS_DATA = (() => {
         noodle_brick: { id:"noodle_brick", name:"Bloc de nouilles" },
         fermented_root: { id:"fermented_root", name:"Racine fermentée" },
 
-        // Ressources marines & abyssales (25)
+        // Ressources marines & abyssales
         coral_fragment: { id:"coral_fragment", name:"Fragment de corail" },
         kelp_strip: { id:"kelp_strip", name:"Lanière de varech" },
         barnacle_cluster: { id:"barnacle_cluster", name:"Amas de bernacles" },
@@ -790,7 +790,7 @@ window.ABYSS_DATA = (() => {
         kelp_spore: { id:"kelp_spore", name:"Spore de varech" },
         sea_clay: { id:"sea_clay", name:"Argile marine" },
 
-        // Divers & curiosités (25)
+        // Divers & curiosités
         forgotten_key: { id:"forgotten_key", name:"Clé oubliée" },
         broken_compass: { id:"broken_compass", name:"Boussole cassée" },
         ancient_map: { id:"ancient_map", name:"Carte ancienne" },
@@ -2096,7 +2096,7 @@ window.ABYSS_DATA = (() => {
             id:"q_village_rations",
             name:"Rations pour le village",
             description:"Amener 10 morceaux de viande crue et 10 légumes-racines.",
-            goal:{type:"collect", resourceId:"raw_meat", amount:10}, // tu peux splitter en deux si tu gères plusieurs ressources
+            goal:{type:"collect", resourceId:"raw_meat", amount:10}, 
             reward:{gold:210, exp:190},
             minFloor:20
         },
@@ -2248,7 +2248,7 @@ window.ABYSS_DATA = (() => {
 
     const VILLAGE_FLOORS = [10, 20, 35, 50, 60, 75, 90];
 
-    // 300 monstres (3 par étage, 100 étages)
+
     const ALL_MONSTERS = [
         // Floor 1
         { id:"f1_rustling_spriggan", name:"Spriggan de rouille", hp:12, str:3, dex:3, loot:["herb","rusty_sword"] },
@@ -2402,8 +2402,7 @@ window.ABYSS_DATA = (() => {
         { id:"f30_chrono_prelate", name:"Prélat chrono", hp:52, str:21, dex:9, loot:["aether_crystal","clarity_potion"] },
         { id:"f30_cog_sanctifier", name:"Sanctificateur engrené", hp:51, str:21, dex:9, loot:["gear_fragment","steel_sword"] },
 
-        // ------- FLOORS 31–60 (plus démoniaques / abyssaux / mécaniques divins) -------
-
+      
         // Floor 31
         { id:"f31_abyssal_halo", name:"Halo abyssal", hp:55, str:23, dex:9, loot:["shadow_essence","soul_fragment"] },
         { id:"f31_ironlit_vicar", name:"Vicaire ferreux", hp:54, str:23, dex:9, loot:["iron_helm","iron_chest"] },
@@ -2454,7 +2453,7 @@ window.ABYSS_DATA = (() => {
         { id:"f40_gear_throne", name:"Trône d’engrenages vivant", hp:71, str:32, dex:11, loot:["gear_fragment"] },
         { id:"f40_ether_crown", name:"Couronne d’éther vivante", hp:70, str:32, dex:12, loot:["aether_crystal","emerald_ring"] },
 
-        // ------- FLOORS 41–60 (archanges mécaniques, avatars d’éther / néant) -------
+     
 
         // Floor 41
         { id:"f41_cog_seraph", name:"Séraphin d’engrenages", hp:74, str:34, dex:11, loot:["gear_fragment","steel_sword"] },
@@ -2919,7 +2918,7 @@ window.ABYSS_DATA = (() => {
 
 
     const SHOP_POOLS = {
-        // --- Surface : début de run, stuff de base ---
+    
         surface: [
             // Armes simples
             "rusty_sword","spear","hunter_bow",
@@ -2933,7 +2932,7 @@ window.ABYSS_DATA = (() => {
             "lucky_charm","iron_ring"
         ],
 
-        // --- Shallow 1 : premier village (floor 10) ---
+     
         village_shallow_1: [
             // Armes basiques
             "rusty_sword","spear","hunter_bow","oak_bow",
@@ -2948,7 +2947,7 @@ window.ABYSS_DATA = (() => {
             "iron_ring","lucky_charm"
         ],
 
-        // --- Shallow 2 : deuxième village (floor 20) ---
+    
         village_shallow_2: [
             // Armes un peu meilleures
             "rusty_sword","spear","oak_bow","bronze_axe","hunter_bow",
@@ -2965,7 +2964,7 @@ window.ABYSS_DATA = (() => {
             "iron_ring","lucky_charm"
         ],
 
-        // --- Mid 1 : village intermédiaire (floor 35) ---
+      
         village_mid_1: [
             // Armes mid game
             "steel_sword","warhammer","recurve_bow","shadow_dagger",
@@ -2986,7 +2985,7 @@ window.ABYSS_DATA = (() => {
             "iron_ring","ruby_ring","emerald_ring"
         ],
 
-        // --- Mid 2 : village avancé (floor 50) ---
+     
         village_mid_2: [
             // Armes mid+ / rares
             "steel_sword","warhammer","recurve_bow","shadow_dagger",
@@ -3005,7 +3004,7 @@ window.ABYSS_DATA = (() => {
             "iron_ring","ruby_ring","emerald_ring","clockwork_amulet"
         ],
 
-        // --- Deep 1 : villages profonds (floors 60 & 75) ---
+      
         village_deep_1: [
             // Armes late game
             "steel_sword","warhammer","recurve_bow",
@@ -3024,7 +3023,6 @@ window.ABYSS_DATA = (() => {
             "ruby_ring","emerald_ring","clockwork_amulet"
         ],
 
-        // --- Deep 2 : dernier village très profond (floor 90) ---
         village_deep_2: [
             // Armes très haut niveau (late / quasi endgame)
             "steel_sword","warhammer","recurve_bow",
